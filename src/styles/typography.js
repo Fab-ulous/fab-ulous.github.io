@@ -1,5 +1,5 @@
-import css from "@emotion/css"
-import dimensions from "styles/dimensions"
+import css from "@emotion/css";
+import dimensions from "styles/dimensions";
 
 const typeStyles = css`
   body {
@@ -57,12 +57,14 @@ const typeStyles = css`
   code {
     background-color: rgb(247, 247, 247);
     padding: 5px 10px;
+    overflow: overlay;
+    border-radius: 4px;
     &.special {
       background-color: #f56565;
       color: white;
       font-weight: bold;
     }
   }
-`
+`;
 
-export default typeStyles
+export default typeStyles;
