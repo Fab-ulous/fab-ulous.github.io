@@ -135,7 +135,13 @@ const RenderBody = () => (
       </p>
       <code class="special">
         {
-          '<link rel="stylesheet" type="text/css" href="https://fab-ulous.github.io/github.min.css">'
+          '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@latest/dist/github.min.css">'
+        }
+      </code>
+      <p>or</p>
+      <code class="special">
+        {
+          '<link rel="stylesheet" type="text/css" href="https://unpkg.com/@fab-ulous/github@latest/dist/github.min.css">'
         }
       </code>
       <p>or through npm / yarn</p>
