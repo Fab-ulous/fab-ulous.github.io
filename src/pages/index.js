@@ -7,6 +7,7 @@ import colors from "styles/colors";
 import dimensions from "styles/dimensions";
 
 import Layout from "components/Layout";
+import Button from "components/_ui/Button";
 
 import fabulous from "../images/github-fabulous.png";
 
@@ -194,6 +195,10 @@ class RenderBody extends React.Component {
         >
           fab-ulous
         </a>
+        <p>Randomize the color of the fab-ulous in this page</p>
+        <Button style={{ width: 300 }} onClick={this.randomColor}>
+          Random color
+        </Button>
         <p>
           <h4>Position</h4>Choose between <strong>left</strong> /{" "}
           <strong>right</strong>, <strong>bottom</strong> / <strong>top</strong>

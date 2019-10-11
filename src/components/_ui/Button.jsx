@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import styled from "@emotion/styled"
-import colors from "styles/colors"
-import dimensions from "styles/dimensions"
+import React, { Component } from "react";
+import styled from "@emotion/styled";
+import colors from "styles/colors";
+import dimensions from "styles/dimensions";
 
 const ButtonContainer = styled("button")`
   padding: 1em 2em;
@@ -56,17 +56,17 @@ const ButtonContainer = styled("button")`
       transition: background 100ms ease-in-out;
     }
   }
-`
+`;
 
 class Button extends Component {
   render() {
-    const { children, ...props } = this.props
+    const { children, ...props } = this.props;
     return (
       <ButtonContainer onClick={this.props.onClick} {...props}>
         {this.props.children}
       </ButtonContainer>
-    )
+    );
   }
 }
 
-export default Button
+export default Button;
