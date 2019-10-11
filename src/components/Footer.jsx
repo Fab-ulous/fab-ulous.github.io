@@ -54,14 +54,6 @@ const Footer = () => (
     <FooterAuthor href="https://matteomanzinello.com">
       © 2019 — creato da matteo manzinello
     </FooterAuthor>
-    <a
-      id="github-fabulous"
-      className="blue"
-      href="https://github.com/manzinello/fab-ulous"
-      target="_blank"
-    >
-      fab-ulous
-    </a>
   </FooterContainer>
 );
 

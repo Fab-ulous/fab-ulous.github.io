@@ -15,6 +15,14 @@ const NotFoundPage = () => (
     </Helmet>
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <a
+      id="github-fabulous"
+      className="blue"
+      href="https://github.com/manzinello/fab-ulous"
+      target="_blank"
+    >
+      fab-ulous
+    </a>
   </Layout>
 );
 

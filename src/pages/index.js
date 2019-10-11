@@ -194,6 +194,14 @@ const RenderBody = () => (
           '<a id="github-fabulous" style="..." href="[repo_url]">[option_text]</a>'
         }
       </code>
+      <a
+        id="github-fabulous"
+        className="blue"
+        href="https://github.com/manzinello/fab-ulous"
+        target="_blank"
+      >
+        fab-ulous
+      </a>
     </Section>
   </>
 );
