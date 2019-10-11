@@ -185,13 +185,12 @@ class RenderBody extends React.Component {
             '<a id="github-fabulous" class="red" href="[repo_url]">[option_text]</a>'
           }
         </code>
-        <p>will give you this</p>
         <a
           id="github-fabulous"
           className="red"
           href="https://github.com/manzinello/fab-ulous"
           target="_blank"
-          style={{ position: "inherit" }}
+          style={{ position: "inherit", marginTop: 15 }}
         >
           fab-ulous
         </a>
@@ -214,9 +213,18 @@ class RenderBody extends React.Component {
         </p>
         <code>
           {
-            '<a id="github-fabulous" class="red left top no-shadow" href="[repo_url]">[option_text]</a>'
+            '<a id="github-fabulous" class="green left top no-shadow" href="[repo_url]">[option_text]</a>'
           }
         </code>
+        <a
+          id="github-fabulous"
+          className="green left top no-shadow"
+          href="https://github.com/manzinello/fab-ulous"
+          target="_blank"
+          style={{ position: "inherit", marginTop: 15 }}
+        >
+          fab-ulous
+        </a>
         <p>
           <h4>Other customization</h4>
           More customization? Add a <strong>style</strong> to the element and
