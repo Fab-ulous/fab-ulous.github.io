@@ -54,6 +54,10 @@ const typeStyles = css`
     }
   }
 
+  strong {
+    font-weight: 600;
+  }
+
   code {
     background-color: rgb(247, 247, 247);
     padding: 5px 10px;

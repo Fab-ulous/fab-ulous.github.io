@@ -107,7 +107,8 @@ const RenderBody = () => (
     <Section>
       <h3>Get started</h3>
       <p>
-        <h4>Import fab-ulous</h4>You can add fab-ulous directly in head
+        <h4>Import fab-ulous</h4>You can add fab-ulous directly in{" "}
+        <strong>head</strong>
       </p>
       <code className="special">
         {
@@ -120,13 +121,15 @@ const RenderBody = () => (
           '<link rel="stylesheet" type="text/css" href="https://unpkg.com/@fab-ulous/github@latest/dist/github.min.css">'
         }
       </code>
-      <p>or through npm / yarn</p>
+      <p>
+        or through <strong>npm</strong> / <strong>yarn</strong>
+      </p>
       <code>{"npm install @fab-ulous/github"}</code>
       <code>{"yarn add @fab-ulous/github"}</code>
       <p>and then import it with</p>
       <code>{"import '@fab-ulous/github';"}</code>
       <p>
-        <h4>Usage</h4>Add (where you want) this:
+        <h4>Usage</h4>Add (where you want) this
       </p>
       <code className="special">
         {'<a id="github-fabulous" href="[repo_url]">[optional_text]</a>'}
@@ -143,8 +146,19 @@ const RenderBody = () => (
           '<a id="github-fabulous" class="red" href="[repo_url]">[option_text]</a>'
         }
       </code>
+      <p>will give you this</p>
+      <a
+        id="github-fabulous"
+        className="red"
+        href="https://github.com/manzinello/fab-ulous"
+        target="_blank"
+        style={{ position: "inherit" }}
+      >
+        fab-ulous
+      </a>
       <p>
-        <h4>Position</h4>Choose between left / right, bottom / top
+        <h4>Position</h4>Choose between <strong>left</strong> /{" "}
+        <strong>right</strong>, <strong>bottom</strong> / <strong>top</strong>
       </p>
       <code>
         {
@@ -153,7 +167,7 @@ const RenderBody = () => (
       </code>
 
       <p>
-        <h4>Shadow</h4>Don't you like shadow? Remove it:
+        <h4>Shadow</h4>Don't like <strong>shadow</strong>? Remove it
       </p>
       <code>
         {
