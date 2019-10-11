@@ -92,7 +92,7 @@ const RenderBody = () => (
       <link
         rel="stylesheet"
         type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@0.1.3/dist/github.min.css"
+        href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@0.1.4/dist/github.min.css"
       />
       <title>fab-ulous</title>
     </Helmet>
