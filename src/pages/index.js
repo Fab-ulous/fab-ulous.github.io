@@ -86,125 +86,154 @@ const Section = styled("div")`
   }
 `;
 
-const RenderBody = () => (
-  <>
-    <Helmet>
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@0.1.5/dist/github.min.css"
-      />
-      <title>fab-ulous</title>
-    </Helmet>
-    <Hero>
-      <img width="100%" src={fabulous} />
-      <h1>
-        Colorful <u>f</u>loating <u>a</u>ction <u>b</u>uttons for your GitHub
-        repo or account (wip)
-      </h1>
-    </Hero>
+class RenderBody extends React.Component {
+  state = {
+    color: null
+  };
 
-    <Section>
-      <h3>Get started</h3>
-      <p>
-        <h4>Import fab-ulous</h4>You can add fab-ulous directly in{" "}
-        <strong>head</strong>
-      </p>
-      <code className="special">
-        {
-          '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@latest/dist/github.min.css">'
-        }
-      </code>
-      <p>or</p>
-      <code className="special">
-        {
-          '<link rel="stylesheet" type="text/css" href="https://unpkg.com/@fab-ulous/github@latest/dist/github.min.css">'
-        }
-      </code>
-      <p>
-        or through <strong>npm</strong> / <strong>yarn</strong>
-      </p>
-      <code>{"npm install @fab-ulous/github"}</code>
-      <code>{"yarn add @fab-ulous/github"}</code>
-      <p>and then import it with</p>
-      <code>{"import '@fab-ulous/github';"}</code>
-      <p>
-        <h4>Usage</h4>Add (where you want) this
-      </p>
-      <code className="special">
-        {'<a id="github-fabulous" href="[repo_url]">[optional_text]</a>'}
-      </code>
-    </Section>
-    <Section>
-      <h3>Customization</h3>
-      <p>
-        <h4>Color</h4>Choose your color between{" "}
-        <strong style={{ color: "#f56565" }}>red</strong>,{" "}
-        <strong style={{ color: "#ed8936" }}>orange</strong>,{" "}
-        <strong style={{ color: "#48bb78" }}>green</strong>,{" "}
-        <strong style={{ color: "#38b2ac" }}>teal</strong>,{" "}
-        <strong style={{ color: "#4299e1" }}>blue</strong>,{" "}
-        <strong style={{ color: "#667eea" }}>indigo</strong>,{" "}
-        <strong style={{ color: "#9f7aea" }}>purple</strong>,{" "}
-        <strong style={{ color: "#ed64a6" }}>pink</strong> or{" "}
-        <strong style={{ color: "#a0aec0" }}>gray</strong>, and add it as a
-        class (default is{" "}
-        <strong style={{ color: "#1a202c" }}>this color</strong>), an example?
-      </p>
-      <code>
-        {
-          '<a id="github-fabulous" class="red" href="[repo_url]">[option_text]</a>'
-        }
-      </code>
-      <p>will give you this</p>
-      <a
-        id="github-fabulous"
-        className="red"
-        href="https://github.com/manzinello/fab-ulous"
-        target="_blank"
-        style={{ position: "inherit" }}
-      >
-        fab-ulous
-      </a>
-      <p>
-        <h4>Position</h4>Choose between <strong>left</strong> /{" "}
-        <strong>right</strong>, <strong>bottom</strong> / <strong>top</strong>
-      </p>
-      <code>
-        {
-          '<a id="github-fabulous" class="red left top" href="[repo_url]">[option_text]</a>'
-        }
-      </code>
+  constructor(props) {
+    super(props);
+    this.state = { color: this.randomColor() };
+  }
 
-      <p>
-        <h4>Shadow</h4>Don't like <strong>shadow</strong>? Remove it
-      </p>
-      <code>
-        {
-          '<a id="github-fabulous" class="red left top no-shadow" href="[repo_url]">[option_text]</a>'
-        }
-      </code>
-      <p>
-        <h4>Other customization</h4>
-        More customization? Add a <strong>style</strong> to the element and
-        specify what you want!
-      </p>
-      <code>
-        {
-          '<a id="github-fabulous" style="..." href="[repo_url]">[option_text]</a>'
-        }
-      </code>
-      <a
-        id="github-fabulous"
-        className="blue"
-        href="https://github.com/manzinello/fab-ulous"
-        target="_blank"
-      >
-        fab-ulous
-      </a>
-    </Section>
-  </>
-);
+  randomColor = () => {
+    let colors = [
+      "red",
+      "orange",
+      "green",
+      "teal",
+      "blue",
+      "indigo",
+      "purple",
+      "pink",
+      "gray",
+      ""
+    ];
+    let color = colors[Math.floor(Math.random() * colors.length)];
+    this.setState({ color });
+    return color;
+  };
+
+  render = () => (
+    <>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@0.1.5/dist/github.min.css"
+        />
+        <title>fab-ulous</title>
+      </Helmet>
+      <Hero>
+        <img width="100%" src={fabulous} />
+        <h1>
+          Colorful <u>f</u>loating <u>a</u>ction <u>b</u>uttons for your GitHub
+          repo or account (wip)
+        </h1>
+      </Hero>
+
+      <Section>
+        <h3>Get started</h3>
+        <p>
+          <h4>Import fab-ulous</h4>You can add fab-ulous directly in{" "}
+          <strong>head</strong>
+        </p>
+        <code className="special">
+          {
+            '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@latest/dist/github.min.css">'
+          }
+        </code>
+        <p>or</p>
+        <code className="special">
+          {
+            '<link rel="stylesheet" type="text/css" href="https://unpkg.com/@fab-ulous/github@latest/dist/github.min.css">'
+          }
+        </code>
+        <p>
+          or through <strong>npm</strong> / <strong>yarn</strong>
+        </p>
+        <code>{"npm install @fab-ulous/github"}</code>
+        <code>{"yarn add @fab-ulous/github"}</code>
+        <p>and then import it with</p>
+        <code>{"import '@fab-ulous/github';"}</code>
+        <p>
+          <h4>Usage</h4>Add (where you want) this
+        </p>
+        <code className="special">
+          {'<a id="github-fabulous" href="[repo_url]">[optional_text]</a>'}
+        </code>
+      </Section>
+      <Section>
+        <h3>Customization</h3>
+        <p>
+          <h4>Color</h4>Choose your color between{" "}
+          <strong style={{ color: "#f56565" }}>red</strong>,{" "}
+          <strong style={{ color: "#ed8936" }}>orange</strong>,{" "}
+          <strong style={{ color: "#48bb78" }}>green</strong>,{" "}
+          <strong style={{ color: "#38b2ac" }}>teal</strong>,{" "}
+          <strong style={{ color: "#4299e1" }}>blue</strong>,{" "}
+          <strong style={{ color: "#667eea" }}>indigo</strong>,{" "}
+          <strong style={{ color: "#9f7aea" }}>purple</strong>,{" "}
+          <strong style={{ color: "#ed64a6" }}>pink</strong> or{" "}
+          <strong style={{ color: "#a0aec0" }}>gray</strong>, and add it as a
+          class (default is{" "}
+          <strong style={{ color: "#1a202c" }}>this color</strong>), an example?
+        </p>
+        <code>
+          {
+            '<a id="github-fabulous" class="red" href="[repo_url]">[option_text]</a>'
+          }
+        </code>
+        <p>will give you this</p>
+        <a
+          id="github-fabulous"
+          className="red"
+          href="https://github.com/manzinello/fab-ulous"
+          target="_blank"
+          style={{ position: "inherit" }}
+        >
+          fab-ulous
+        </a>
+        <p>
+          <h4>Position</h4>Choose between <strong>left</strong> /{" "}
+          <strong>right</strong>, <strong>bottom</strong> / <strong>top</strong>
+        </p>
+        <code>
+          {
+            '<a id="github-fabulous" class="red left top" href="[repo_url]">[option_text]</a>'
+          }
+        </code>
+
+        <p>
+          <h4>Shadow</h4>Don't like <strong>shadow</strong>? Remove it
+        </p>
+        <code>
+          {
+            '<a id="github-fabulous" class="red left top no-shadow" href="[repo_url]">[option_text]</a>'
+          }
+        </code>
+        <p>
+          <h4>Other customization</h4>
+          More customization? Add a <strong>style</strong> to the element and
+          specify what you want!
+        </p>
+        <code>
+          {
+            '<a id="github-fabulous" style="..." href="[repo_url]">[option_text]</a>'
+          }
+        </code>
+        <a
+          id="github-fabulous"
+          className={this.state.color}
+          href="https://github.com/manzinello/fab-ulous"
+          target="_blank"
+        >
+          fab-ulous
+        </a>
+      </Section>
+    </>
+  );
+}
 
 export default () => {
   return (
