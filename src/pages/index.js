@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 
-import styled from "@emotion/styled"
-import colors from "styles/colors"
-import dimensions from "styles/dimensions"
+import styled from "@emotion/styled";
+import colors from "styles/colors";
+import dimensions from "styles/dimensions";
 
-import Layout from "components/Layout"
+import Layout from "components/Layout";
 
-import fabulous from "../images/github-fabulous.png"
+import fabulous from "../images/github-fabulous.png";
 
 const Hero = styled("div")`
   padding-top: 2.5em;
@@ -70,7 +70,7 @@ const Hero = styled("div")`
       }
     }
   }
-`
+`;
 
 const Section = styled("div")`
   margin-bottom: 10em;
@@ -84,11 +84,18 @@ const Section = styled("div")`
   &:last-of-type {
     margin-bottom: 0;
   }
-`
+`;
 
 const RenderBody = () => (
   <>
-    <Helmet title={"fab-ulous"} />
+    <Helmet>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@latest/dist/github.min.css"
+      />
+      <title>fab-ulous</title>
+    </Helmet>
     <Hero>
       <img width="100%" src={fabulous} />
       <h1>
@@ -102,13 +109,13 @@ const RenderBody = () => (
       <p>
         <h4>Import fab-ulous</h4>You can add fab-ulous directly in head
       </p>
-      <code class="special">
+      <code className="special">
         {
           '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@latest/dist/github.min.css">'
         }
       </code>
       <p>or</p>
-      <code class="special">
+      <code className="special">
         {
           '<link rel="stylesheet" type="text/css" href="https://unpkg.com/@fab-ulous/github@latest/dist/github.min.css">'
         }
@@ -121,7 +128,7 @@ const RenderBody = () => (
       <p>
         <h4>Usage</h4>Add (where you want) this:
       </p>
-      <code class="special">
+      <code className="special">
         {'<a id="github-fabulous" href="[repo_url]">[optional_text]</a>'}
       </code>
     </Section>
@@ -165,12 +172,12 @@ const RenderBody = () => (
       </code>
     </Section>
   </>
-)
+);
 
 export default () => {
   return (
     <Layout>
       <RenderBody />
     </Layout>
-  )
-}
+  );
+};
