@@ -147,11 +147,13 @@ const RenderBody = () => (
       <p>or through npm / yarn</p>
       <code>{"npm install @fab-ulous/github"}</code>
       <code>{"yarn add @fab-ulous/github"}</code>
+      <p>and then import it with</p>
+      <code>{"import '@fab-ulous/github';"}</code>
       <p>
         <h4>Usage</h4>Add (where you want) this:
       </p>
       <code class="special">
-        {'<a id="github-fabulous" href="[repo_url]">[option_text]</a>'}
+        {'<a id="github-fabulous" href="[repo_url]">[optional_text]</a>'}
       </code>
     </Section>
     <Section>
@@ -165,7 +167,6 @@ const RenderBody = () => (
           '<a id="github-fabulous" class="red" href="[repo_url]">[option_text]</a>'
         }
       </code>
-
       <p>
         <h4>Position</h4>Choose between left / right, bottom / top
       </p>
