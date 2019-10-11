@@ -138,8 +138,18 @@ const RenderBody = () => (
     <Section>
       <h3>Customization</h3>
       <p>
-        <h4>Color</h4>Choose your color between ... and add it as a class, an
-        example?
+        <h4>Color</h4>Choose your color between{" "}
+        <strong style={{ color: "#f56565" }}>red</strong>,{" "}
+        <strong style={{ color: "#ed8936" }}>orange</strong>,{" "}
+        <strong style={{ color: "#48bb78" }}>green</strong>,{" "}
+        <strong style={{ color: "#38b2ac" }}>teal</strong>,{" "}
+        <strong style={{ color: "#4299e1" }}>blue</strong>,{" "}
+        <strong style={{ color: "#667eea" }}>indigo</strong>,{" "}
+        <strong style={{ color: "#9f7aea" }}>purple</strong>,{" "}
+        <strong style={{ color: "#ed64a6" }}>pink</strong> or{" "}
+        <strong style={{ color: "#a0aec0" }}>gray</strong>, and add it as a
+        class (default is{" "}
+        <strong style={{ color: "#1a202c" }}>this color</strong>), an example?
       </p>
       <code>
         {
