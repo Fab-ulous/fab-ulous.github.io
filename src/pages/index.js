@@ -10,6 +10,7 @@ import Layout from "components/Layout";
 import Button from "components/_ui/Button";
 
 import fabulous from "../images/github-fabulous.png";
+import arrow from "../images/arrow.png";
 
 const Hero = styled("div")`
   padding-top: 2.5em;
@@ -235,6 +236,9 @@ class RenderBody extends React.Component {
             '<a id="github-fabulous" style="..." href="[repo_url]">[option_text]</a>'
           }
         </code>
+        <div className="arrow">
+          <img src={arrow} width="200" />
+        </div>
         <a
           id="github-fabulous"
           className={this.state.color}

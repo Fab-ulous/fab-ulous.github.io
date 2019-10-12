@@ -1,6 +1,6 @@
-import css from "@emotion/css"
-import colors from "styles/colors"
-import dimensions from "styles/dimensions"
+import css from "@emotion/css";
+import colors from "styles/colors";
+import dimensions from "styles/dimensions";
 
 const globalStyles = css`
   html,
@@ -33,6 +33,20 @@ const globalStyles = css`
     }
   }
 
+  .arrow {
+    opacity: 0.2;
+    z-index: -1;
+    position: fixed;
+    right: 26px;
+    bottom: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .arrow {
+      display: none;
+    }
+  }
+
   /*
     A workaround for forcing accessibility wrappers
     to have a 100% height.
@@ -43,6 +57,6 @@ const globalStyles = css`
     height: 100%;
     min-height: 100% !important;
   }
-`
+`;
 
-export default globalStyles
+export default globalStyles;
