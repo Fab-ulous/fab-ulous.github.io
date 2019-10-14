@@ -98,6 +98,12 @@ class RenderBody extends React.Component {
     this.state = { color: this.randomColor() };
   }
 
+  componentDidMount = () => {
+    let t = setInterval(() => {
+      this.randomColor();
+    }, 2222);
+  };
+
   randomColor = () => {
     let colors = [
       "red",
@@ -130,7 +136,7 @@ class RenderBody extends React.Component {
         <img width="100%" src={fabulous} />
         <h1>
           Colorful <u>f</u>loating <u>a</u>ction <u>b</u>uttons for your GitHub
-          repo or account (wip)
+          repo or account <em>wip</em>
         </h1>
       </Hero>
 
@@ -199,10 +205,14 @@ class RenderBody extends React.Component {
         >
           fab-ulous
         </a>
-        <p>Randomize the color of the fab-ulous in this page</p>
-        <Button style={{ width: 300 }} onClick={this.randomColor}>
-          Random color
-        </Button>
+        {false && (
+          <>
+            <p>Randomize the color of the fab-ulous in this page</p>
+            <Button style={{ width: 300 }} onClick={this.randomColor}>
+              Random color
+            </Button>
+          </>
+        )}
         <p>
           <h4>Position</h4>Choose between <strong>left</strong> /{" "}
           <strong>right</strong>, <strong>bottom</strong> / <strong>top</strong>
