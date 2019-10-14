@@ -236,9 +236,11 @@ class RenderBody extends React.Component {
             '<a id="github-fabulous" style="..." href="[repo_url]">[option_text]</a>'
           }
         </code>
-        <div className="arrow">
-          <img src={arrow} width="200" />
-        </div>
+        {false && (
+          <div className="arrow">
+            <img src={arrow} width="200" />
+          </div>
+        )}
         <a
           id="github-fabulous"
           className={this.state.color}
