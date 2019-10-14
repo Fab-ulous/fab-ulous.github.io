@@ -140,7 +140,7 @@ class RenderBody extends React.Component {
           <h4>Import fab-ulous</h4>You can add fab-ulous directly in{" "}
           <strong>head</strong>
         </p>
-        <code className="special">
+        <code className="special-blue">
           {
             '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@latest/dist/github.min.css">'
           }
@@ -161,6 +161,10 @@ class RenderBody extends React.Component {
         <p>
           <h4>Usage</h4>Add (where you want) this
         </p>
+        <code className="special-blue">
+          {'<a class="github-fabulous" href="[repo_url]">[optional_text]</a>'}
+        </code>
+        <p>or this</p>
         <code className="special">
           {'<a id="github-fabulous" href="[repo_url]">[optional_text]</a>'}
         </code>

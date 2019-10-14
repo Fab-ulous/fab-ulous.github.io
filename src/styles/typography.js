@@ -9,7 +9,7 @@ const typeStyles = css`
   h1 {
     font-size: 2.8em;
     line-height: 1.45;
-    font-weight: 800;
+    font-weight: 700;
 
     @media (max-width: ${dimensions.maxwidthTablet}px) {
       font-size: 2.25em;
@@ -64,8 +64,13 @@ const typeStyles = css`
     overflow: overlay;
     border-radius: 4px;
     &.special {
-      background-color: #f56565;
       color: white;
+      color: #f56565;
+      font-weight: bold;
+    }
+    &.special-blue {
+      color: white;
+      color: #4299e1;
       font-weight: bold;
     }
   }
