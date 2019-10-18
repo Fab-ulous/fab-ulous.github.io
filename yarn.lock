@@ -881,6 +881,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.4.tgz#622a72bebd1e3f48d921563b4b60a762295a81fc"
   integrity sha512-6PYY5DVdAY1ifaQW6XYTnOMihmBVT27elqSjEoodchsGjzYlEsTQMcEhSud99kVawatyTZRTiVkJ/c6lwbQ7nA==
 
+"@fab-ulous/github@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@fab-ulous/github/-/github-0.1.8.tgz#0b2e6d6e6dc9730ff97b3b3fdf2b9c2dddf3e413"
+  integrity sha512-ZBqGT8vvbUW5YgQce2TAH4IfyBiBJ5GnIIDcfx8WZPpgRVUDOkUx8FovW4YXU6VL/2TORmTzDhvQs4cz0YiGdA==
+
 "@gatsbyjs/relay-compiler@2.0.0-printer-fix.4":
   version "2.0.0-printer-fix.4"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/relay-compiler/-/relay-compiler-2.0.0-printer-fix.4.tgz#4b06aeb4f2ceea5878b5832a2ced1bff9abb62bd"

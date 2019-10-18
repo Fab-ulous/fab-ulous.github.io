@@ -12,6 +12,8 @@ import Button from "components/_ui/Button";
 import fabulous from "../images/github-fabulous.png";
 import arrow from "../images/arrow.png";
 
+import "@fab-ulous/github";
+
 const Hero = styled("div")`
   padding-top: 2.5em;
   padding-bottom: 3em;
@@ -131,11 +133,6 @@ class RenderBody extends React.Component {
   render = () => (
     <>
       <Helmet>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@0.1.5/dist/github.min.css"
-        />
         <title>fab-ulous</title>
       </Helmet>
       <Hero>

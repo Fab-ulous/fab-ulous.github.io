@@ -3,6 +3,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import Layout from "components/Layout";
 
+import "@fab-ulous/github";
+
 class NotFoundPage extends React.Component {
   state = {
     color: null
@@ -34,11 +36,6 @@ class NotFoundPage extends React.Component {
   render = () => (
     <Layout>
       <Helmet>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/npm/@fab-ulous/github@0.1.5/dist/github.min.css"
-        />
         <title>not-found - fab-ulous</title>
       </Helmet>
       <h1>NOT FOUND</h1>
