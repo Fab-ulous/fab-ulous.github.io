@@ -89,6 +89,8 @@ const Section = styled("div")`
 `;
 
 class RenderBody extends React.Component {
+  intervalID = 0;
+
   state = {
     color: null
   };
@@ -99,10 +101,14 @@ class RenderBody extends React.Component {
   }
 
   componentDidMount = () => {
-    let t = setInterval(() => {
+    this.intervalID = setInterval(() => {
       this.randomColor();
     }, 2222);
   };
+
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
 
   randomColor = () => {
     let colors = [
