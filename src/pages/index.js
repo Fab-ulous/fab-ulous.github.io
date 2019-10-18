@@ -161,7 +161,8 @@ class RenderBody extends React.Component {
           }
         </code>
         <p>
-          or through <strong>npm</strong> / <strong>yarn</strong>
+          or through <strong>npm</strong> / <strong>yarn</strong> (this website
+          uses this way)
         </p>
         <code>{"npm install @fab-ulous/github"}</code>
         <code>{"yarn add @fab-ulous/github"}</code>
