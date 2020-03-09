@@ -6,40 +6,40 @@
   "version": "0.1.0",
   "author": "Matteo Manzinello",
   "dependencies": {
-    "@emotion/core": "^10.0.27",
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@fab-ulous/github": "^0.1.8",
-    "gatsby": "^2.19.1",
-    "gatsby-image": "^2.2.39",
-    "gatsby-plugin-catch-links": "^2.1.24",
-    "gatsby-plugin-emotion": "^4.1.21",
-    "gatsby-plugin-google-analytics": "^2.1.33",
-    "gatsby-plugin-manifest": "^2.2.37",
-    "gatsby-plugin-offline": "^3.0.32",
-    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby": "^2.19.32",
+    "gatsby-image": "^2.2.43",
+    "gatsby-plugin-catch-links": "^2.1.27",
+    "gatsby-plugin-emotion": "^4.1.24",
+    "gatsby-plugin-google-analytics": "^2.1.37",
+    "gatsby-plugin-manifest": "^2.2.44",
+    "gatsby-plugin-offline": "^3.0.37",
+    "gatsby-plugin-react-helmet": "^3.1.23",
     "gatsby-plugin-resolve-src": "^2.0.0",
-    "gatsby-plugin-sass": "^2.1.27",
-    "gatsby-plugin-sharp": "^2.4.0",
-    "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-source-prismic-graphql": "3.4.0-beta.1",
-    "gatsby-transformer-sharp": "^2.3.13",
+    "gatsby-plugin-sass": "^2.1.30",
+    "gatsby-plugin-sharp": "^2.4.7",
+    "gatsby-source-filesystem": "^2.1.50",
+    "gatsby-source-prismic-graphql": "3.5.0",
+    "gatsby-transformer-sharp": "^2.3.17",
     "node-sass": "^4.13.1",
     "prismic-reactjs": "^1.2.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
+    "react": "^16.13.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.0",
     "react-emoji": "^0.5.0",
     "react-helmet": "^5.2.1",
     "react-markdown": "^4.3.1",
-    "react-modal": "^3.11.1",
+    "react-modal": "^3.11.2",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
-    "smooth-scroll": "^16.1.1"
+    "smooth-scroll": "^16.1.2"
   },
   "devDependencies": {
-    "gatsby-plugin-remove-trailing-slashes": "^2.1.20",
+    "gatsby-plugin-remove-trailing-slashes": "^2.1.22",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
@@ -59,8 +59,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/fab-ulous/fab-ulous.github.io"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
